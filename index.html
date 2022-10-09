@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDeveloper :: Urian Viera</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    .titulo {
+      text-align: center;
+      font-weight: 800;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-12">
+
+        <h1 class="soyH1 mb-5" style="text-align:center; margin-top:50px; font-weight: 800;font-size: 50px;">
+          🔥 Cómo saber si un elemento existe con javascript 😲
+        </h1>
+
+        <div class="row justify-content-md-center">
+          <div class="col-md-12 mb-3">
+            <h2 class="text-center titulo">
+              JAVASCRIPT 💪
+            </h2>
+          </div>
+
+          <p id="info" data-usuario="Urian Viera" data-nit="5455455" data-sexo="Masculino" class="text-center titulo" title="Mi titulo">
+           Bienvenidos a la Comunidad WebDeveloper ..!
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+  addEventListener('DOMContentLoaded', (event) => {
+    let miInfo = document.querySelector('#info');
+
+    console.log(miInfo);
+    console.log(miInfo.classList);
+    console.log(miInfo.className);
+    console.log(miInfo.baseURI);
+    console.log(miInfo.textContent);
+    console.log(miInfo.innerHTML);
+    console.log(miInfo.innerHTML ='Nuevo contenido......!');
+    console.log(miInfo.id);
+    console.log(miInfo.dataset.usuario);
+    console.log(miInfo.dataset.nit);
+    console.log(miInfo.dataset.sexo);
+    miInfo.style.color='crimson';
+
+  });
+  </script>
+
+
+</body>
+
+</html>
