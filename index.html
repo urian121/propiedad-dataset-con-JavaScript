@@ -17,6 +17,10 @@
       padding: 10px;
       border-radius: 5px;
     }
+    #empleado{
+      padding: 15px;
+      background-color: #e0e0e0;
+    }
   </style>
 </head>
 
@@ -29,7 +33,9 @@
       <div class="col-md-12">
 
         <h1 class="soyH1 mb-5" style="text-align:center; margin-top:50px; font-weight: 800;font-size: 50px;">
-          🔥 Cómo saber si un elemento existe con javascript 😲
+        🔥 HTMLElement.dataset vale ORO😲
+        <br>
+        data-*
         </h1>
 
         <div class="row justify-content-md-center">
@@ -43,6 +49,10 @@
            Bienvenidos a la Comunidad WebDeveloper ..!
           </p>
 
+          <div id="empleado" data-edad="50" data-sexo="F" data-profesion="Programadora" data-pais="Mexio">
+            Empleada Ana
+          </div>
+
         </div>
 
       </div>
@@ -51,7 +61,7 @@
 
 
   <script>
-  addEventListener('DOMContentLoaded', (event) => {
+
     let miInfo = document.querySelector('#info');
 
     console.log(miInfo);
@@ -66,8 +76,8 @@
     console.log(miInfo.dataset.nit);
     console.log(miInfo.dataset.sexo);
     miInfo.style.color='crimson';
-
-  });
+    
+ 
   </script>
 
 
